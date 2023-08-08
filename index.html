@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>To Do App</title>
+</head>
+<body class="p-3">
+  <main class="border bg-green-500 border-green-600 text-white">
+    <h2 class="mb-4 text-center text-white font-extrabold text-3xl">To Do App</h2>
+      <form action="" class="flex items-center justify-center" >
+        <input class="rounded-sm text-gray-600 px-2 outline-none" type="text" name="" id="innerText">
+        <input class="border border-green-700 ml-1 px-2 rounded text-white bg-green-600" type="submit" value="Submit" id="addTask">
+      </form>
+
+      <!-- inComplete Task -->
+      <section class="flex justify-between mainTodoDiv my-6">
+        <section id="todoBox" class=" border border-green-600 p-3 rounded">
+          <ul id="items">
+            <li class="flex gap-2"><input type="checkbox"><label>Task Item 1</label></li>
+            <li class="flex gap-2"><input type="checkbox"><label>Task Item 2</label></li>
+            <li class="flex gap-2"><input type="checkbox"><label>Task Item 3</label></li>
+          </ul>
+        </section>
+  
+        <!-- complete Task -->
+        <section id="complete" class="border border-green-600 rounded p-3 w-60">
+          <ul id="completeUl">
+            <li class="flex justify-between"><label for="">Task 1</label><button class="delete text-white bg-red-500 px-2 rounded border border-red-700">Delete</button></li>
+          </ul>
+        </section>
+      </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
